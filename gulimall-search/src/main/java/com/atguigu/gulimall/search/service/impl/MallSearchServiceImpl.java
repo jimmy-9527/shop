@@ -1,16 +1,16 @@
-package com.xunqi.gulimall.search.service.impl;
+package com.atguigu.gulimall.search.service.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
-import com.xunqi.common.es.SkuEsModel;
-import com.xunqi.common.utils.R;
-import com.xunqi.gulimall.search.config.GulimallElasticSearchConfig;
-import com.xunqi.gulimall.search.constant.EsConstant;
-import com.xunqi.gulimall.search.service.MallSearchService;
-import com.xunqi.gulimall.search.vo.AttrResponseVo;
-import com.xunqi.gulimall.search.vo.SearchParam;
-import com.xunqi.gulimall.search.vo.SearchResult;
-import com.xunqi.gulimall.search.feign.ProductFeignService;
+import com.atguigu.common.es.SkuEsModel;
+import com.atguigu.common.utils.R;
+import com.atguigu.gulimall.search.config.GulimallElasticSearchConfig;
+import com.atguigu.gulimall.search.constant.EsConstant;
+import com.atguigu.gulimall.search.service.MallSearchService;
+import com.atguigu.gulimall.search.vo.AttrResponseVo;
+import com.atguigu.gulimall.search.vo.SearchParam;
+import com.atguigu.gulimall.search.vo.SearchResult;
+import com.atguigu.gulimall.search.feign.ProductFeignService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.lucene.search.join.ScoreMode;
 import org.elasticsearch.action.search.SearchRequest;

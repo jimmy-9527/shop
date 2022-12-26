@@ -1,6 +1,6 @@
-package com.xunqi.gulimall.search.service;
+package com.atguigu.gulimall.search.service;
 
-import com.xunqi.common.es.SkuEsModel;
+import com.atguigu.common.es.SkuEsModel;
 
 import java.io.IOException;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.xunqi.gulimall.search.thread;
+package com.atguigu.gulimall.search.thread;
 
 import java.util.concurrent.*;
 

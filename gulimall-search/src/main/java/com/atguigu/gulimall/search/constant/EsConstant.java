@@ -1,4 +1,4 @@
-package com.xunqi.gulimall.search.constant;
+package com.atguigu.gulimall.search.constant;
 
 /**
  * @Description:

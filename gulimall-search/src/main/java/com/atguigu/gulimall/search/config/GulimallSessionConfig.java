@@ -1,4 +1,4 @@
-package com.xunqi.gulimall.search.config;
+package com.atguigu.gulimall.search.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

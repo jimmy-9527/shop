@@ -1,4 +1,4 @@
-package com.xunqi.gulimall.search.vo;
+package com.atguigu.gulimall.search.vo;
 
 import lombok.Data;
 

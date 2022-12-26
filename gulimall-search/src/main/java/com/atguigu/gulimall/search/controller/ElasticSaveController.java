@@ -1,9 +1,9 @@
-package com.xunqi.gulimall.search.controller;
+package com.atguigu.gulimall.search.controller;
 
-import com.xunqi.common.es.SkuEsModel;
-import com.xunqi.common.exception.BizCodeEnum;
-import com.xunqi.common.utils.R;
-import com.xunqi.gulimall.search.service.ProductSaveService;
+import com.atguigu.common.es.SkuEsModel;
+import com.atguigu.common.exception.BizCodeEnum;
+import com.atguigu.common.utils.R;
+import com.atguigu.gulimall.search.service.ProductSaveService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
