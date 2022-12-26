@@ -10,6 +10,12 @@ spring:
         server-addr: 127.0.0.1:8848
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
+alibaba:
+  cloud:
+    access-key: LTAI5tCaW6cqkw2zgXNc1LMc
+    secret-key: EN8HsNaKsT5VsSnUV2Qvlafv7B1H14
+    oss:
+      endpoint: https://oss-us-east-1.aliyuncs.com
 
 
 mybatis-plus:
