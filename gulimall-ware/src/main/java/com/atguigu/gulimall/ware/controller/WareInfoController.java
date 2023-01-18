@@ -11,30 +11,15 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Arrays;
 import java.util.Map;
 
-
-
-/**
- * 仓库信息
- *
- * @author 夏沫止水
- * @email HeJieLin@gulimall.com
- * @date 2020-05-22 19:55:33
- */
 @RestController
 @RequestMapping("ware/wareinfo")
 public class WareInfoController {
     @Autowired
     private WareInfoService wareInfoService;
 
-    /**
-     * 获取运费信息
-     * @return
-     */
     @GetMapping(value = "/fare")
     public R getFare(@RequestParam("addrId") Long addrId) {
-
         FareVo fare = wareInfoService.getFare(addrId);
-
         return R.ok().setData(fare);
     }
 

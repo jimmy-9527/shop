@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.atguigu.gulimall.gulimallware.GulimallWareApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.335 s <<< FAILURE! - in com.atguigu.gulimall.gulimallware.GulimallWareApplicationTests
+initializationError(com.atguigu.gulimall.gulimallware.GulimallWareApplicationTests)  Time elapsed: 0.012 s  <<< ERROR!
+java.lang.IllegalStateException: Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes=...) with your test
+

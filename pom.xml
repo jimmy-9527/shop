@@ -19,8 +19,11 @@
         <module>renren-generator</module>
         <module>gulimall-common</module>
         <module>gulimall-search</module>
+        <module>gulimall-seckill</module>
+        <module>gulimall-auth-server</module>
+        <module>gulimall-cart</module>
+        <module>gulimall-test-sso-client</module>
+        <module>gulimall-test-sso-server</module>
+        <module>gulimall-seckill</module>
     </modules>
-
-
-
 </project>

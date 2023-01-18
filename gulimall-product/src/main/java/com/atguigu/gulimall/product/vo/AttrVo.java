@@ -1,10 +1,17 @@
 package com.atguigu.gulimall.product.vo;
 
-
 import lombok.Data;
+
+/**
+ * @Description:
+ * @Created: with IntelliJ IDEA.
+ * @author: 夏沫止水
+ * @createTime: 2020-05-29 08:43
+ **/
 
 @Data
 public class AttrVo {
+
     /**
      * 属性id
      */
@@ -17,10 +24,6 @@ public class AttrVo {
      * 是否需要检索[0-不需要，1-需要]
      */
     private Integer searchType;
-    /**
-     * 值类型[0-为单个值，1-可以选择多个值]
-     */
-    private Integer valueType;
     /**
      * 属性图标
      */
@@ -47,4 +50,5 @@ public class AttrVo {
     private Integer showDesc;
 
     private Long attrGroupId;
+
 }

@@ -1,30 +1,27 @@
 package com.atguigu.gulimall.product.controller;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-
+import com.atguigu.common.utils.PageUtils;
+import com.atguigu.common.utils.R;
 import com.atguigu.gulimall.product.entity.ProductAttrValueEntity;
+import com.atguigu.gulimall.product.service.AttrService;
 import com.atguigu.gulimall.product.service.ProductAttrValueService;
-import com.atguigu.gulimall.product.vo.AttrGroupRelationVo;
 import com.atguigu.gulimall.product.vo.AttrRespVo;
 import com.atguigu.gulimall.product.vo.AttrVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import com.atguigu.gulimall.product.entity.AttrEntity;
-import com.atguigu.gulimall.product.service.AttrService;
-import com.atguigu.common.utils.PageUtils;
-import com.atguigu.common.utils.R;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
 
 
 
 /**
  * 商品属性
  *
- * @author leifengyang
- * @email leifengyang@gmail.com
- * @date 2019-10-01 22:50:32
+ * @author 夏沫止水
+ * @email HeJieLin@gulimall.com
+ * @date 2020-05-22 19:00:18
  */
 @RestController
 @RequestMapping("product/attr")
@@ -33,18 +30,29 @@ public class AttrController {
     private AttrService attrService;
 
     @Autowired
-    ProductAttrValueService productAttrValueService;
+    private ProductAttrValueService productAttrValueService;
 
-    ///product/attr/info/{attrId}
+    ///product/attr/base/listforspu/{spuId}
 
-    // /product/attr/base/listforspu/{spuId}
+    /**
+     *  获取spu规格
+     */
     @GetMapping("/base/listforspu/{spuId}")
     public R baseAttrlistforspu(@PathVariable("spuId") Long spuId){
 
-        List<ProductAttrValueEntity> entities = productAttrValueService.baseAttrlistforspu(spuId);
+        List<ProductAttrValueEntity> entities = productAttrValueService.baseAttrListForSpu(spuId);
 
         return R.ok().put("data",entities);
     }
+
+
+    /**
+     * 查询规格参数信息
+     * @param params
+     * @param catelogId
+     * @param type
+     * @return
+     */
 
     //product/attr/sale/list/0?
     ///product/attr/base/list/{catelogId}
@@ -75,7 +83,9 @@ public class AttrController {
     @RequestMapping("/info/{attrId}")
     //@RequiresPermissions("product:attr:info")
     public R info(@PathVariable("attrId") Long attrId){
-		//AttrEntity attr = attrService.getById(attrId);
+
+		// AttrEntity attr = attrService.getById(attrId);
+
         AttrRespVo respVo = attrService.getAttrInfo(attrId);
 
         return R.ok().put("attr", respVo);
@@ -92,15 +102,13 @@ public class AttrController {
         return R.ok();
     }
 
-    ///product/attrgroup/attr/relation/delete
-
-
     /**
      * 修改
      */
     @RequestMapping("/update")
     //@RequiresPermissions("product:attr:update")
     public R update(@RequestBody AttrVo attr){
+
 		attrService.updateAttr(attr);
 
         return R.ok();
@@ -108,6 +116,7 @@ public class AttrController {
 
     ///product/attr/update/{spuId}
     @PostMapping("/update/{spuId}")
+    //@RequiresPermissions("product:attr:update")
     public R updateSpuAttr(@PathVariable("spuId") Long spuId,
                            @RequestBody List<ProductAttrValueEntity> entities){
 
@@ -115,6 +124,7 @@ public class AttrController {
 
         return R.ok();
     }
+
 
     /**
      * 删除
@@ -126,5 +136,6 @@ public class AttrController {
 
         return R.ok();
     }
+
 
 }

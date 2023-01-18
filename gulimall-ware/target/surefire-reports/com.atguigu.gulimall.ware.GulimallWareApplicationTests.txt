@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.atguigu.gulimall.ware.GulimallWareApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.914 s <<< FAILURE! - in com.atguigu.gulimall.ware.GulimallWareApplicationTests
+contextLoads(com.atguigu.gulimall.ware.GulimallWareApplicationTests)  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'paginationInterceptor' defined in class path resource [com/atguigu/gulimall/ware/config/WareMyBatisConfig.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=wareMyBatisConfig; factoryMethodName=paginationInterceptor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/atguigu/gulimall/ware/config/WareMyBatisConfig.class]] for bean 'paginationInterceptor': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=myBatisConfig; factoryMethodName=paginationInterceptor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/atguigu/gulimall/ware/config/MyBatisConfig.class]] bound.
+

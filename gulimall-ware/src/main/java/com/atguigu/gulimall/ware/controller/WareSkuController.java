@@ -50,9 +50,6 @@ public class WareSkuController {
         return R.ok().setData(vos);
     }
 
-    /**
-     * 列表
-     */
     @RequestMapping("/list")
     //@RequiresPermissions("ware:waresku:list")
     public R list(@RequestParam Map<String, Object> params){
@@ -69,7 +66,6 @@ public class WareSkuController {
     //@RequiresPermissions("ware:waresku:info")
     public R info(@PathVariable("id") Long id){
 		WareSkuEntity wareSku = wareSkuService.getById(id);
-
         return R.ok().put("wareSku", wareSku);
     }
 

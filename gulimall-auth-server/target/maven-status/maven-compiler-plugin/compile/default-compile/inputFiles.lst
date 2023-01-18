@@ -1,0 +1,14 @@
+C:\Users\Ken\Desktop\git2\gulimall\gulimall-auth-server\src\main\java\com\atguigu\gulimall\auth\config\GulimallAuthServerSentinelConfig.java
+C:\Users\Ken\Desktop\git2\gulimall\gulimall-auth-server\src\main\java\com\atguigu\gulimall\auth\feign\MemberFeignService.java
+C:\Users\Ken\Desktop\git2\gulimall\gulimall-auth-server\src\main\java\com\atguigu\gulimall\auth\GulimallAuthServerApplication.java
+C:\Users\Ken\Desktop\git2\gulimall\gulimall-auth-server\src\main\java\com\atguigu\gulimall\auth\vo\SocialUser.java
+C:\Users\Ken\Desktop\git2\gulimall\gulimall-auth-server\src\main\java\com\atguigu\gulimall\auth\controller\WxApiController.java
+C:\Users\Ken\Desktop\git2\gulimall\gulimall-auth-server\src\main\java\com\atguigu\gulimall\auth\config\GulimallSessionConfig.java
+C:\Users\Ken\Desktop\git2\gulimall\gulimall-auth-server\src\main\java\com\atguigu\gulimall\auth\controller\LoginController.java
+C:\Users\Ken\Desktop\git2\gulimall\gulimall-auth-server\src\main\java\com\atguigu\gulimall\auth\controller\OAuth2Controller.java
+C:\Users\Ken\Desktop\git2\gulimall\gulimall-auth-server\src\main\java\com\atguigu\gulimall\auth\vo\UserRegisterVo.java
+C:\Users\Ken\Desktop\git2\gulimall\gulimall-auth-server\src\main\java\com\atguigu\gulimall\auth\utils\HttpClientUtils.java
+C:\Users\Ken\Desktop\git2\gulimall\gulimall-auth-server\src\main\java\com\atguigu\gulimall\auth\feign\ThirdPartFeignService.java
+C:\Users\Ken\Desktop\git2\gulimall\gulimall-auth-server\src\main\java\com\atguigu\gulimall\auth\vo\UserLoginVo.java
+C:\Users\Ken\Desktop\git2\gulimall\gulimall-auth-server\src\main\java\com\atguigu\gulimall\auth\utils\ConstantWxUtils.java
+C:\Users\Ken\Desktop\git2\gulimall\gulimall-auth-server\src\main\java\com\atguigu\gulimall\auth\config\GulimallWebConfig.java

@@ -11,10 +11,9 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableFeignClients
 @EnableDiscoveryClient
 @SpringBootApplication(exclude = GlobalTransactionAutoConfiguration.class)
-public class GulimallWareApplication {
 
+public class GulimallWareApplication {
     public static void main(String[] args) {
         SpringApplication.run(GulimallWareApplication.class, args);
     }
-
 }

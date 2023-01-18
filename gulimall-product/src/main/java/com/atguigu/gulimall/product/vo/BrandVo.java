@@ -2,13 +2,18 @@ package com.atguigu.gulimall.product.vo;
 
 import lombok.Data;
 
+/**
+ * @Description:
+ * @Created: with IntelliJ IDEA.
+ * @author: 夏沫止水
+ * @createTime: 2020-05-30 15:39
+ **/
+
 @Data
 public class BrandVo {
 
-    /**
-     * "brandId": 0,
-     * "brandName": "string",
-     */
     private Long brandId;
-    private String  brandName;
+
+    private String brandName;
+
 }

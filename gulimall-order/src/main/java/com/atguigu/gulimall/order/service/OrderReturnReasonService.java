@@ -9,9 +9,9 @@ import java.util.Map;
 /**
  * 退货原因
  *
- * @author leifengyang
- * @email leifengyang@gmail.com
- * @date 2019-10-08 09:56:16
+ * @author 夏沫止水
+ * @email HeJieLin@gulimall.com
+ * @date 2020-05-22 19:49:53
  */
 public interface OrderReturnReasonService extends IService<OrderReturnReasonEntity> {
 

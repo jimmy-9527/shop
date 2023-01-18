@@ -5,8 +5,12 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * 这是一个声明式的远程调用
- */
+ * @Description:
+ * @Created: with IntelliJ IDEA.
+ * @author: 夏沫止水
+ * @createTime: 2020-05-30 15:23
+ **/
+
 @FeignClient("gulimall-coupon")
 public interface CouponFeignService {
 

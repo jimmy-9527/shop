@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: com.atguigu.gulimall.auth.GulimallAuthServerApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.774 s <<< FAILURE! - in com.atguigu.gulimall.auth.GulimallAuthServerApplicationTests
+contextLoads(com.atguigu.gulimall.auth.GulimallAuthServerApplicationTests)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Failed to load property source from location 'classpath:/application.yml'
+Caused by: org.yaml.snakeyaml.parser.ParserException: 
+expected '<document start>', but found '<block mapping start>'
+ in 'reader', line 8, column 1:
+    spring:
+    ^
+
+

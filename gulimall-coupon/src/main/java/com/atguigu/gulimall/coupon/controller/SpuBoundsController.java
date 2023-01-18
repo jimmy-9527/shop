@@ -1,24 +1,22 @@
 package com.atguigu.gulimall.coupon.controller;
 
-import java.util.Arrays;
-import java.util.Map;
-
+import com.atguigu.common.utils.PageUtils;
+import com.atguigu.common.utils.R;
+import com.atguigu.gulimall.coupon.entity.SpuBoundsEntity;
+import com.atguigu.gulimall.coupon.service.SpuBoundsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import com.atguigu.gulimall.coupon.entity.SpuBoundsEntity;
-import com.atguigu.gulimall.coupon.service.SpuBoundsService;
-import com.atguigu.common.utils.PageUtils;
-import com.atguigu.common.utils.R;
-
+import java.util.Arrays;
+import java.util.Map;
 
 
 /**
  * 商品spu积分设置
  *
- * @author leifengyang
- * @email leifengyang@gmail.com
- * @date 2019-10-08 09:36:40
+ * @author 夏沫止水
+ * @email HeJieLin@gulimall.com
+ * @date 2020-05-22 19:35:30
  */
 @RestController
 @RequestMapping("coupon/spubounds")
@@ -52,7 +50,7 @@ public class SpuBoundsController {
     /**
      * 保存
      */
-    @PostMapping("/save")
+    @RequestMapping("/save")
     //@RequiresPermissions("coupon:spubounds:save")
     public R save(@RequestBody SpuBoundsEntity spuBounds){
 		spuBoundsService.save(spuBounds);
